@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Label } from "@/components/ui/label";
-// import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { IconBrandGithub, IconBrandGoogle } from "@tabler/icons-react";
 import { useAuthStore } from "@/store/Auth";
@@ -88,26 +88,26 @@ export default function Register() {
                 <div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0">
                     <LabelInputContainer>
                         <Label htmlFor="firstname">First name</Label>
-                        {/* <Input className="text-black" id="firstname" name="firstname" placeholder="Tyler" type="text" /> */}
+                        <Input className="text-black" id="firstname" name="firstname" placeholder="Tyler" type="text" />
                     </LabelInputContainer>
                     <LabelInputContainer>
                         <Label htmlFor="lastname">Last name</Label>
-                        {/* <Input className="text-black"  id="lastname" name="lastname" placeholder="Durden" type="text" /> */}
+                        <Input className="text-black"  id="lastname" name="lastname" placeholder="Durden" type="text" />
                     </LabelInputContainer>
                 </div>
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="email">Email Address</Label>
-                    {/* <Input
+                    <Input
                     className="text-black" 
                         id="email"
                         name="email"
                         placeholder="projectmayhem@fc.com"
                         type="email"
-                    /> */}
+                    />
                 </LabelInputContainer>
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="password">Password</Label>
-                    {/* <Input className="text-black"  id="password" name="password" placeholder="••••••••" type="password" /> */}
+                    <Input className="text-black"  id="password" name="password" placeholder="••••••••" type="password" />
                 </LabelInputContainer>
 
                 <button

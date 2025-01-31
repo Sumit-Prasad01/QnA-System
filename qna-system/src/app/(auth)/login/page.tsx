@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Label } from "@/components/ui/label";
-// import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { IconBrandGithub, IconBrandGoogle } from "@tabler/icons-react";
 import { useAuthStore } from "@/store/Auth";
@@ -75,17 +75,17 @@ export default function Login() {
             <form className="my-8" onSubmit={handleSubmit}>
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="email">Email Address</Label>
-                    {/* <Input
+                    <Input
                     className="text-black"
                         id="email"
                         name="email"
                         placeholder="projectmayhem@fc.com"
                         type="email"
-                    /> */}
+                    />
                 </LabelInputContainer>
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="password">Password</Label>
-                    {/* <Input className="text-black" id="password" name="password" placeholder="••••••••" type="password" /> */}
+                    <Input className="text-black" id="password" name="password" placeholder="••••••••" type="password" />
                 </LabelInputContainer>
 
                 <button
